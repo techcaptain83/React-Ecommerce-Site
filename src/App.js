@@ -1,3 +1,8 @@
+import './App.scss';
+
+import Home from "./components/Home";
+import Products from "./components/Products";
+
 import {
   Container,
   Text,
@@ -31,8 +36,11 @@ function App() {
 
   return (
     <Container maxW="container.xl" h="100vh" >
+      <Home/>
+    <Products/>
+
       <Flex justifyContent="space-between" alignContent="center">
-        <Text
+        {/* <Text
           as="a"
           href="/"
           fontSize="2rem"
@@ -41,7 +49,7 @@ function App() {
           my="5px"
         >
           Cookie Jar
-        </Text>
+        </Text> */}
         <Button
           my="5px"
           colorScheme="green"
@@ -54,7 +62,7 @@ function App() {
           View Cart
 </Button>
       </Flex>
-      <Divider />
+      
       <Box mt={4}>
         <SimpleGrid
           minChildWidth="300px"
